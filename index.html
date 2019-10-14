@@ -25,7 +25,7 @@
       <script src="js/html5shiv.min.js"></script>
       <script src="js/respond.min.js"></script>
     <![endif]-->
-<script src="../www.google.com/recaptcha/api.js%3Fonload=onloadCallback&amp;render=explicit"></script>
+<!-- <script src="../www.google.com/recaptcha/api.js%3Fonload=onloadCallback&amp;render=explicit"></script> -->
 <!--<script src="https://www.google.com/recaptcha/api.js?onload=myCallBack&render=explicit" async defer></script>-->
 </head>
 <body>
@@ -251,95 +251,6 @@
 <script src="js/bootstrap.min.js"></script> 
 <script src="js/aos.js"></script> 
 <script src="js/scripts.js"></script>
-<script>
-	var gitcaptcha, careercaptcha;
-	var onloadCallback = function() {
-	gitcaptcha = grecaptcha.render('recaptcha1', {
-	'sitekey' : '6LcnC70UAAAAAK1YRbSi-DfJ4qVarOzjKe8mYxeP'
-	});
-	careercaptcha = grecaptcha.render('recaptcha2', {
-	'sitekey' : '6LcnC70UAAAAAK1YRbSi-DfJ4qVarOzjKe8mYxeP'
-	});
-	};
-	document.getElementById("GIT_form").addEventListener("submit",function(evt)
-		  {
 
-		  var response = grecaptcha.getResponse(gitcaptcha);
-		  if(response.length == 0) 
-		  { 
-			//reCaptcha not verified
-			  $('.r-error').show();
-			//alert("please verify you are humann!"); 
-			evt.preventDefault();
-			return false;
-		  }else {
-					$('.r-error').hide();
-          $('.loader').addClass('active');
-
-					$.ajax({
-					    url: 'mail-general.php',
-					    method: 'POST',
-					    data: $('#GIT_form').serialize()
-					}).done(function (response) {
-            $('.loader').removeClass('active');
-						$('.git_status').html("<div class=\"alert alert-success\">" + response +"</div>" );
-            if (response.indexOf("ERROR") == -1 && response.indexOf("error") == -1) {
-              setTimeout(function(){ 
-                //$('.git_status .alert-success').fadeOut().remove();
-                $('#GIT_form .form-wrapper').fadeOut();
-              },2000);
-
-            }
-					})
-				} 
-
-
-			return false;
-		  //captcha verified
-		  //do the rest of your validations here
-
-		});
-	
-		document.getElementById("Careers_form").addEventListener("submit",function(evt2)
-		  {
-
-		  var response = grecaptcha.getResponse(careercaptcha);
-		  if(response.length == 0) 
-		  { 
-			//reCaptcha not verified
-			//alert("please verify you are humann!");
-			$('.r-error2').show();
-			evt2.preventDefault();
-			return false;
-		  }
-		 else {
-				$('.r-error2').hide();
-          $('.loader').addClass('active');
-
-				$.ajax({
-				    url: 'mail-career.php',
-				    method: 'POST',
-				    data: $('#Careers_form').serialize()
-				}).done(function (response) {
-
-            $('.loader').removeClass('active');
-					$('.career_status').html("<div class=\"alert alert-success\">" + response +"</div>" );
-            if (response.indexOf("ERROR") == -1 && response.indexOf("error") == -1) {
-    					setTimeout(function(){ 
-    						//$('.career_status .alert-success').fadeOut().remove();
-    						$('#Careers_form .form-wrapper').fadeOut();
-    					},2000);
-            }
-				})
-			} 
-		  //captcha verified
-		  //do the rest of your validations here
-		  return false;
-			
-		});
- 
-	
-	
-	</script>
 </body>
 </html>
