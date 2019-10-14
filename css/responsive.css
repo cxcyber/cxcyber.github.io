@@ -1,0 +1,254 @@
+
+@media only screen and (max-width:1700px) {
+	.about-section{
+		background-position: 45%;
+	}
+	.home-banner-section{
+		height: 500px;
+	}
+	.home-banner-section video{
+		width: 101%;
+	}
+}
+@media only screen and (max-width:1550px) {
+	
+	.home-banner-section video{
+		width: auto;
+		height: 100%;
+	}
+}
+@media only screen and (max-width:1450px) {
+	.home-banner-section{
+		height: 465px;
+	}
+}
+
+@media only screen and (max-width: 991px) {
+.tab-content .form-wrapper {
+	max-width: 272px;
+	padding-top: 29px;
+}
+.tab-content .form-wrapper button {
+	width: 100%;
+}
+.contact-section .address-wrapper {
+	padding-left: 15px;
+}
+.cyberCX-companies-section ul {
+	margin-bottom: 0
+}
+	.about-section{
+		background-position: 50%;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.footer-link{
+		display: block;
+		padding-left: 0
+	}
+	.footer-link a{
+		padding-left: 0;
+		padding-right: 20px;
+	}
+	.section-below-company .inner-content {
+    padding:0;
+}
+	.cyberCX-companies-section{
+		padding: 50px 0;
+	}
+	.about-section .title24 {
+    margin-bottom: 30px;
+}
+	.about-section .mb {
+    margin-bottom: 25px;
+}
+	.about-section{
+		background-image: none !important;
+	}
+	.cyber-done-differently-section{
+		padding: 50px 0;
+	}
+	.contact-section .left-container{
+		min-height: inherit
+	}
+	.cyberCX-companies-section .title24{
+		text-align: center
+	}
+	.tab-wrapper {
+    padding: 40px 0px;
+}
+	.section-below-company{
+		padding-bottom: 10px;
+		padding-top: 50px;
+	}
+	.our-services-section .inner-div,
+	.what-we-do-section .inner-div{
+		padding-top: 20px;
+	}
+	.home-banner-section .content-div h1{
+		    font-size: 30px;
+    line-height: 35px;
+	}
+	.our-services-section{
+		padding: 40px 0;
+	}
+	.our-services-section ul li{
+		margin-bottom: 20px !important;
+	}
+ 
+.tab-content .form-wrapper {
+	max-width: 100%;
+}
+.contact-section:after {
+	display: none;
+}
+.contact-section .container-inner {
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-flex-wrap: nowrap;
+	-ms-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-align-content: stretch;
+	-ms-flex-line-pack: stretch;
+	align-content: stretch;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	width: 100%;
+	height: auto
+}
+.tab-wrapper {
+	padding-bottom: 0
+}
+.contact-section .left-container {
+	width: 100%;
+	padding: 0;
+	background-image: none !important;
+}
+.contact-section .bg-blue {
+	margin: 0 -35px;
+}
+.contact-section .address-wrapper {
+	padding: 50px 20px;
+	width: 100%
+}
+.contact-section .contact-mob-bg {
+	margin: 0 -15px;
+	background: #eff5ff;
+}
+ 
+.container {
+	padding-left: 35px;
+	padding-right: 35px;
+}
+.home-banner-section {
+	background-image: url(../images/top-banner-t-img.png) !important;
+	background-size: 60% auto;
+	background-repeat: no-repeat;
+	background-position: right top;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-flex-wrap: nowrap;
+	-ms-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-align-content: stretch;
+	-ms-flex-line-pack: stretch;
+	align-content: stretch;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	background-color: #021276;
+	height: auto
+}
+.home-banner-section .container {
+	padding-top: 100px;
+	padding-bottom: 100px;
+	width: 100%;
+}
+.about-section {
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-flex-wrap: nowrap;
+	-ms-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-align-content: stretch;
+	-ms-flex-line-pack: stretch;
+	align-content: stretch;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	height: auto
+}
+.about-section .container {
+	padding-top: 100px;
+	padding-bottom: 100px;
+	width: 100%;
+}
+.cyberCX-companies-section {
+	background-size: auto 55%;
+}
+	.home-banner-section video{
+		display: none;
+	}
+	.about-section .container {
+		padding-top: 0
+	}
+}
+
+@media only screen and (max-width: 640px) {
+.cyberCX-companies-section ul li {
+	width: 50%;
+	padding: 0 15px;
+}
+}
+
+@media only screen and (max-width: 480px) {
+.logo {
+	max-width: 160px;
+	padding-bottom: 40px;
+}
+.home-banner-section .container {
+	padding-top: 60px;
+	padding-bottom: 80px;
+}
+.about-section .container {
+	padding-top: 10px;
+	padding-bottom: 60px;
+}
+.what-we-do-section {
+	padding: 50px 0;
+}
+}
+
+@media only screen and (max-width: 460px) {
+.contact-section .address-wrapper {
+	padding: 60px 20px;
+	padding-bottom: 10px;
+}
+.container {
+	padding-left: 25px;
+	padding-right: 25px;
+}
+}
